@@ -1,7 +1,7 @@
 'use strict';
 
 const ARTIST_ID = process.argv[2];
-const DIR = '/Users/eli/Desktop/itfu/' + process.argv[4] + '/';
+const DIR = process.argv[4] + '/';
 const BUCKET = "net.itfu.images";
 const SOURCE_S3_FOLDER = 'original/';
 

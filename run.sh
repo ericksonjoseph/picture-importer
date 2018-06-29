@@ -1,4 +1,9 @@
 #!/bin/bash
 set -eu
 
-ls ~/Desktop/itfu/$2/ > tmp/$2 && node src/index.js $1 tmp/$2 $2
+artistId=$1
+folder=$2
+basepath=/Users/destinie/Clients/DJoseph/Images
+
+#mkdir -p tmp/
+ls $basepath/$folder/ > tmp/$folder && node src/index.js $artistId tmp/$folder $basepath/$folder
